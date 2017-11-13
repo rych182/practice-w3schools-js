@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Display date and time</title>
+</head>
+<body>
+	<p id="demo"></p>
+	<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+		Click me to display Date and Time.
+	</button>
+	<hr>
+
+	<h1>Impact trueno</h1>
+
+	<img src="img/pikachu.png" alt="Pokemon" id="atack">
+	<button type="button" onclick="document.getElementById('atack').src='img/pikachu.png'">
+		Ataca
+	</button>
+	<button type="button" onclick="document.getElementById('atack').src='img/tranquilo.jpg'">
+		Tranquilo
+	</button>
+	<hr>
+
+	<hr>
+
+	<h1 id="cambia">Este comentario cambiara al darle click al boton</h1>
+	<button type="button" onclick="document.getElementById('cambia').innerHTML = 'Hola mama, cambié el comentario' ">
+		Clickeame!!.
+	</button>
+
+	<hr>
+
+	<h1 id="color">También se puede cambiar el color con javascript</h1>
+
+
+<button type="button" onclick="document.getElementById('color').style.color='blue'">Clickeame!</button
+
+	<hr>
+	<br><br><br><br><br>
+	<hr>
+
+	<h1 id="oculto" style="display: none;">También se puede desaparecer y aparecer el texto con Javascript</h1>
+
+<button type="button" onclick="document.getElementById('oculto').style.display='block'">Aparece texto!</button>
+<button type="button" onclick="document.getElementById('oculto').style.display='none'">Desaparece texto!</button>
+
+</body>
+</html>
