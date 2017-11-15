@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Variables</title>
+</head>
+<body>
+	<h1 id="variables"></h1>
+	<h2 id="parentesis"></h2>
+	<h3 id="operacion"></h3>
+	<h4 id="concatenar"></h4>
+	<h5 id="suma"></h5>
+	<h6 id="Cucho"></h6>
+	<p id="mostrar"></p>
+<script>
+	var x = 4;
+	var y = 5.55;
+	var z = x + y;
+	var a = 5 + 5;
+	var Nombre = "Oswald";
+	var edad = prompt("Ingresa tu edad");
+	//var a-b = 4; debes de borrar o comentar una variable mal declarada o no podrás hacer nada
+	var nombre = "perengano";
+	document.getElementById('variables').innerHTML = z;
+	//También se pueden hacer operaciones aritmeticas con parentesis y todo.
+	document.getElementById('parentesis').innerHTML = (5+1) * 5;
+	//También se pueden hacer operaciones con variables y numeros
+	document.getElementById('operacion').innerHTML = x + 3;
+	document.getElementById('concatenar').innerHTML = "hola " + nombre; 
+	document.getElementById('suma').innerHTML = a;
+	/*Las variables con - no están permitidos, este es un ejemplo
+	document.getElementById('raro').innerHTML = a-b;
+	*/
+
+	//También se puede declarar variables con mayusculas
+	document.getElementById('Cucho').innerHTML = Nombre;
+	document.getElementById('mostrar').innerHTML = "Tu edad es: " + edad;
+
+</script>
+</body>
+</html>
