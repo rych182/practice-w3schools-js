@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Funciones</title>
+</head>
+<body>
+	<p id="demo"></p>
+
+	<script>
+
+	/*Este ejemplo llama a una función que realiza un cálculo y devuelve el resultado:
+
+	function miFuncion(p1, p2) {
+    		return p1 * p2;
+	}
+	document.getElementById("demo").innerHTML = miFuncion(4, 3);
+*/
+
+	/*Esta función regresa varios valores
+
+	function myFunction(a, b) {
+    return a * b + '<br>' + (a + b) + '<br>' + (a-b);
+	}
+	document.getElementById("demo").innerHTML = myFunction(4, 3);
+	*/
+	/* Grados Celsius a Farenheit.
+
+	function toCelsius(f) {
+    return (5/9) * (f-32);
+	}
+	document.getElementById("demo").innerHTML = "The temperature is " + toCelsius(77) + " Celsius";
+	*/
+
+	function suma(a,b) {
+		return a + b;
+	}
+
+	function resta (a,b) {
+		return (a - b);
+	}
+
+	function multiplicacion(a,b) {
+		return a * b;
+	}
+
+	function otra(){
+		var nombre = "Ricardo";
+		var saludo = "Hola ";
+		var resultado = saludo + nombre;
+		return resultado;
+	}
+
+/*
+	function division(a,b) {
+		return a / b;
+	}
+*/
+	//document.write(suma(5,8) + resta(5,1) + multiplicacion(2,3) + "<br>");
+	document.write(otra() + ' ' + suma(2,3));
+	
+
+	</script>
+</body>
+</html>
+
