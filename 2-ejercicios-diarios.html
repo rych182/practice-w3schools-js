@@ -12,28 +12,73 @@
 </style>
 <body>
 <!--
-1-Cambiar texto
-2-Cambiar imagenes con botones
-3-cambiar algo de CSS
-4-Aparecer y reaparecer texto con botones
+1-Cambiar texto LISTO
+2-Cambiar imagenes con botones LISTO
+3-cambiar algo de CSS LISTO
+4-Aparecer y reaparecer texto con botones LISTO
+5-funciones que sumen resten o multiplique, con y sin argumentos(los valores que uno le pone en los parentesis) para que me acostumbre.
+6-funciones con return suma,resta,multiplicación,división, sumar,restar,multiplicar y dividir dos resultados de funciones.
+7-funciones con texto
+8- hacer un objeto.
+9-hacer un objeto con una función dentro y usarla.
+10-hacer un objeto con una función dentro y dentro de la fuunción un ciclo.
+11-Algo con typeof
+12-algo con arrays
+13-algo con for.
+14-ejemplo con parseint
 
 -->
 
-<h1 id="demo">Hola pringao</h1>
+<p id="demo">Este texto cambiara</p>
 
-<button onclick="document.getElementById('demo').style.display = 'none'; ">
-	ocultar insulto
-</button>
-
-<button onclick="document.getElementById('demo').style.display = 'block'; ">
-	insultar
+<button onclick="document.getElementById('demo').innerHTML = suma(6,8);">
+	Dame click
 </button>
 
 
 <script>
-	
 
+function hola() {
+	return document.getElementById('demo').innerHTML= 2+2;
+}
+
+function suma(num1,num2) {
+	var resultado = num1 + num2;
+	return resultado;
+}
+
+
+ 
+
+/*
+function hola () {
+	var a = 2+2;
+	return a;
+}
+*/
+
+/*
+ function hola () {
+ 	var a = "Hola como estas";
+ 	document.getElementById('demo').innerHTML = a;
+ }
+*/
+
+
+
+/*
+function hola() {
+	var a = 2+2;
+	return document.getElementById('demo').innerHTML =  a;
+}
+
+*/
+
+
+
+	
 </script>
 
 </body>
 </html>
+

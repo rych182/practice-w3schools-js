@@ -5,10 +5,45 @@
 	<title>Funciones</title>
 </head>
 <body>
-	<p id="demo"></p>
+	<h1>Multiples ejercicios con funciones</h1>
+
+	<p>Este archivo lo hago con el fin de recopilar las multiples maneras de utilizar el valor de una función, esto antes de si quiera pasar a otro tema de programación, ya que el tema se ve vagamente en todos los sitios de internet cuando tienen multiples funcionalidades. Si se quiere resolver problemas, también se requiere darle seriedad y ver las distintas variantes para usar una función.</p>
+
+	<p>Si quieres ver el código de Javascript, basta con que des click derecho en inspeccionar. Como recomendación, fíjate bien en los <b>"id"</b> y en los <b>nombres</b> de las funciones.</p>
+	<hr>
+
+	<h2>Ejercicio 1</h2>
+	<strong>Cambiar el texto con el boton quen dentro tiene el metodo onclick.</strong>
+	<p id="demo">Este texto cambiara.</p>
+	<button onclick="document.getElementById('demo').innerHTML = '<b>Se cambio el texto, recarga la página para probar nuevamente</b>';">
+		Dame click!
+	</button>
+	<hr>
+
+
+	<h2>Ejercicio 2</h2>
+	<strong>Cambiar el texto con una función</strong>
+	<p id="demo1">Este es un texto!</p>
+	<button onclick="document.getElementById('demo1').innerHTML = funcion1();">
+		Dame click!
+	</button>
+
+
+	<hr>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	<p id="demo6"></p>
+	<p id="demo7"></p>
+	<p id="demo8"></p>
+	<p id="demo9"></p>
 
 	<script>
-
+	function funcion1() {
+		var a = "<b>Se cambio el texto, recarga la página para probar nuevamente</b>";
+		return a;
+	}
 	/*Este ejemplo llama a una función que realiza un cálculo y devuelve el resultado:
 
 	function miFuncion(p1, p2) {
